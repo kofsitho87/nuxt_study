@@ -11,6 +11,7 @@ export default defineNuxtConfig({
       'composables/**'
     ]
   },
+
   env: {
     SERVICE_URL: (process.env.ENV === 'LOCAL' ? 'http://' : 'https://') + process.env.SERVICE_ENDPOINT
   },
@@ -31,7 +32,7 @@ export default defineNuxtConfig({
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ['~/assets/todo.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
